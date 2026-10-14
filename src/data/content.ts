@@ -6,7 +6,7 @@ export const profile = {
   headline: 'Backend developer building with .NET, Azure and databases.',
   intro:
     "I work mostly on the server side: APIs, data models and cloud deployments. This site is where I'm sharpening my React and Tailwind, so expect it to change as I learn.",
-  email: 'you@example.com', // TODO: your real email
+  email: 'netojunior@gmail.com',
   github: 'https://github.com/NetoJunior',
   //linkedin: 'https://www.linkedin.com/in/your-profile', // TODO: your LinkedIn URL (or remove it)
 }
@@ -21,10 +21,10 @@ export type Skill = {
 
 // Ordered from deepest to newest, like the query says.
 export const skills: Skill[] = [
+  { area: 'Backend', technology: '.NET and ASP.NET', level: 5, label: 'Deepest' },
   { area: 'Database', technology: 'SQL Server', level: 5, label: 'Deepest' },
   { area: 'Database', technology: 'Oracle', level: 4, label: 'Strong' },
   { area: 'Database', technology: 'MongoDB', level: 4, label: 'Strong' },
-  { area: 'Backend', technology: '.NET and ASP.NET', level: 5, label: 'Deepest' },
   { area: 'Cloud', technology: 'Azure', level: 4, label: 'Strong' },
   { area: 'Frontend', technology: 'React and Tailwind', level: 2, label: 'Learning' },
 ]
@@ -44,19 +44,19 @@ export const projects: Project[] = [
     tags: ['React', 'Tailwind', 'GitHub Actions'],
     href: 'https://github.com/NetoJunior/netojunior.github.io',
   },
-  {
-    // TODO: replace with a real project
-    title: 'Your backend project',
-    description:
-      'Describe a real API or data project here: what problem it solves, the data model, and how it runs on Azure.',
-    tags: ['ASP.NET', 'SQL Server', 'Azure'],
-    href: 'https://github.com/NetoJunior',
-  },
-  {
-    // TODO: replace with a real project
-    title: 'Your next project',
-    description: 'One or two sentences on what it does and what you learned building it.',
-    tags: ['.NET', 'MongoDB'],
-    href: 'https://github.com/NetoJunior',
-  },
+  // {
+  //   // TODO: replace with a real project
+  //   title: 'Your backend project',
+  //   description:
+  //     'Describe a real API or data project here: what problem it solves, the data model, and how it runs on Azure.',
+  //   tags: ['ASP.NET', 'SQL Server', 'Azure'],
+  //   href: 'https://github.com/NetoJunior',
+  // },
+  // {
+  //   // TODO: replace with a real project
+  //   title: 'Your next project',
+  //   description: 'One or two sentences on what it does and what you learned building it.',
+  //   tags: ['.NET', 'MongoDB'],
+  //   href: 'https://github.com/NetoJunior',
+  // },
 ]
