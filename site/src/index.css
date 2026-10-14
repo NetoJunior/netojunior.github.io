@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Design tokens. Light by default, dark follows the OS setting. */
+:root {
+  --paper: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #172033;
+  --muted: #55627a;
+  --line: #d5dbe5;
+  --accent: #0b6b8a;
+  --accent-soft: #dcecf2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f1724;
+    --surface: #162033;
+    --ink: #e8edf5;
+    --muted: #9aa8bf;
+    --line: #28344b;
+    --accent: #5cc2e0;
+    --accent-soft: #1b3442;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+
+  --font-display: "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Instrument Sans Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
