@@ -11,9 +11,9 @@ export function Hero() {
         <a className="underline decoration-line underline-offset-4 hover:decoration-accent" href={profile.github}>
           GitHub
         </a>
-        <a className="underline decoration-line underline-offset-4 hover:decoration-accent" href={profile.linkedin}>
+        {/* <a className="underline decoration-line underline-offset-4 hover:decoration-accent" href={profile.linkedin}>
           LinkedIn
-        </a>
+        </a> */}
         <a className="underline decoration-line underline-offset-4 hover:decoration-accent" href={`mailto:${profile.email}`}>
           Email
         </a>
